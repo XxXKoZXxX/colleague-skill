@@ -41,9 +41,9 @@ export default async function Home() {
         <h2 className="text-2xl font-semibold">How It Works</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { step: '01', title: 'Submit Inquiry', desc: 'Fill out the form with your budget and vision. Minimum $200.' },
-            { step: '02', title: 'Receive Quote', desc: 'We calculate your quote based on hours, materials, and cut complexity.' },
-            { step: '03', title: 'Watch It Come to Life', desc: 'We source the rough stone, facet it, and set it into your piece.' },
+            { step: '01', title: 'Start a Project', desc: 'Submit your budget and vision. Every inquiry becomes a tracked project — minimum $200.' },
+            { step: '02', title: 'Approve the Design', desc: 'A small deposit unlocks design renders with gemologist notes. Approve before any metal is cut.' },
+            { step: '03', title: 'Pay by Milestone', desc: 'Deposit, materials, then final balance — each stage unlocks the next. Watch progress on your dashboard.' },
           ].map(({ step, title, desc }) => (
             <div key={step} className="bg-stone-900 border border-stone-800 rounded-xl p-6 flex flex-col gap-2">
               <span className="text-amber-500 text-xs font-mono font-bold">{step}</span>

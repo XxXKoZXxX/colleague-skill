@@ -16,12 +16,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-stone-950 text-stone-100 min-h-screen`}>
         <nav className="border-b border-stone-800 px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="text-xl font-semibold tracking-widest text-amber-400">
-            KOZ CUSTOM
-          </Link>
+          <div className="flex flex-col">
+            <Link href="/" className="text-xl font-semibold tracking-widest text-amber-400">
+              KOZ CUSTOM
+            </Link>
+            <span className="text-[10px] uppercase tracking-widest text-stone-500">
+              Certified Gemologist · Geologist · Silversmith
+            </span>
+          </div>
           <div className="flex gap-6 text-sm text-stone-400">
             <Link href="/" className="hover:text-amber-400 transition-colors">Order</Link>
-            <Link href="/inventory" className="hover:text-amber-400 transition-colors">Inventory</Link>
+            <Link href="/inventory" className="hover:text-amber-400 transition-colors">The Vault</Link>
             <Link href="/admin" className="hover:text-amber-400 transition-colors">Admin</Link>
           </div>
         </nav>
